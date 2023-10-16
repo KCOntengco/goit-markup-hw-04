@@ -6,7 +6,6 @@
     --SLATE: #434455;
     --OCEAN: #404BBF;
     --IRIS: #4D5AE5;
-
 }
 
 body {
@@ -51,13 +50,14 @@ a {
 /*HEADER*/
 .page-header {
     display: flex;
-    width: 1440px;
+    width: 1158px;
     height: 72px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
     padding-top: 24px;
     gap: 40px;
+    margin-left: 150px;
 }
 
 .header-logo {
@@ -104,34 +104,32 @@ a {
 }
 /*END OF HEADER*/
 
+.container {
+    width: 1158px;
+}
+
 /*MAIN-PAGE*/
 
 /*DARK-BG SECTION*/
-.dark-bg {
-    width: 1440px;
-    height: 600px;
-    flex-shrink: 0;
-    background-color: var(--NAVY-BLUE);
-    text-align: center;
-    
-}
 
 .main {
     width: 1158px;
-    height: 600px;
+    height: 550px;
 }
 
-.h1 {
-    display: flex;
+.dark-bg{
+    background: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url("../images/people-office-1-optmzd.jpg");
+    /*background-image: url("../images/people-office-1-optmzd.jpg");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-color: var(--NAVY-BLUE);*/
+    padding-top: 188px;
+    padding-bottom: 188px;
     text-align: center;
-    justify-content: center;
 }
 
 .main-top-text {
-    width: 496px;
     color: var(--WHITE, #FFF);
-    text-align: center;
-    /* Header 1 */
     font-family: Roboto;
     font-size: 56px;
     font-style: normal;
@@ -140,6 +138,8 @@ a {
     /* 107.143% */
     letter-spacing: 1.12px;
 }
+
+
 
 .order-service-btn {
     font-family: Roboto;
@@ -176,6 +176,11 @@ a {
 
 /*MAIN FEATURE*/
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .service {
     width: 1440px;
     list-style: none;
@@ -185,7 +190,6 @@ a {
     text-align: left;
     padding-top: 120px;
     padding-bottom: 120px;
-    
 }
 
 .service-desc {
@@ -288,6 +292,10 @@ div .card-content {
     /* 150% */
     letter-spacing: 0.32px;
 }
+
+
+
+
 /*END OF MAIN-TEAM*/
 
 /*END OF MAIN-PAGE*/
@@ -355,3 +363,15 @@ div .card-content {
     letter-spacing: 0.32px;
 }
 /*END OF FOOTER*/
+
+/*PORTFOLIO*/
+
+.main-portfolio {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-buttons {
+    display: flex;
+    align-items: center;
+}
