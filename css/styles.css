@@ -212,6 +212,21 @@ a {
     align-items: flex-start;
     gap: 8px;
 }
+
+.service-icon {
+    background: var(--CLOUD);
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    width: 264px;
+    height: 112px;
+    
+    border-radius: 4px;
+    background: var(--CLOUD, #F4F4FD);
+
+}
+
+
 /*END OF MAIN FEATURE*/
 
 
@@ -255,11 +270,25 @@ a {
     border-radius: 0px 0px 4px 4px;
     background: var(--WHITE, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+    display: inline-flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+    width: 264px;
+    height: 428px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+
 }
 
 div .card-content {
     display: flex;
     width: 232px;
+    height: 104px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -294,9 +323,51 @@ div .card-content {
 }
 
 
+.team-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 
+}
 
+.team-icons-socials {
+    background-color:var(--IRIS);
+    padding: 10px;
+    border-radius: 50%;
+}
 /*END OF MAIN-TEAM*/
+
+/*CUSTOMER*/
+
+.customer-container {
+    height: 200px;
+    align-items: center;
+    text-align: center;
+}
+
+.customer-icon-container {
+    height: 168px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
+    
+}
+
+
+.customer-icon {
+    width: 168px;
+    height: 88px;
+    border:1px solid  #8E8F99;
+    
+    display: flex;
+    list-style: none;
+    padding: 16px 32px;
+}
+
+
+/*END OF CUSTOMER*/
+
 
 /*END OF MAIN-PAGE*/
 
@@ -366,12 +437,20 @@ div .card-content {
 
 /*PORTFOLIO*/
 
-.main-portfolio {
-    display: flex;
-    align-items: center;
+.projects ul {
+    width: 100%;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
-.portfolio-buttons {
-    display: flex;
-    align-items: center;
+.projects li {
+    width: 360px;
+}
+
+.projects li img {
+    width: 100%;
+}
+
+.btn {
+    text-align: center;
 }
